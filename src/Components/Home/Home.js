@@ -18,10 +18,15 @@ function Home() {
           console.log(res.length);
           if (res.length == 0) alert("Password and Email doesnt match");
           else {
-            if (res[0].role == "admin")
-              window.location = "http://localhost:3000/admin";
-            else if (res[0].role == "staff")
-              window.location = "http://localhost:3000/staff";
+            if (res[0].role == "admin") {
+              window.location =
+                "https://gallant-shockley-16b477.netlify.app//admin";
+              // window.location = "http://localhost:3000/admin";
+            } else if (res[0].role == "staff") {
+              // window.location = "http://localhost:3000/staff";
+              window.location =
+                "https://gallant-shockley-16b477.netlify.app//staff";
+            }
           }
         })
         .catch((err) => {
