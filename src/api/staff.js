@@ -1,4 +1,5 @@
-const api = "http://localhost:8000";
+// const api = "http://localhost:8000";
+const api="https://couriermanagementdbms.herokuapp.com";
 
 export const insertParcelDetails = (data) => {
   return fetch(api + "/staff/addparcel", {

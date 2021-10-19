@@ -1,4 +1,5 @@
-const api = "http://localhost:8000";
+// const api = "http://localhost:8000";
+const api="https://couriermanagementdbms.herokuapp.com";
 
 //add branch
 export const addbranch = (data) => {
