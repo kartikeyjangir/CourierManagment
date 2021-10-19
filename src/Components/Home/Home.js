@@ -20,12 +20,12 @@ function Home() {
           else {
             if (res[0].role == "admin") {
               window.location =
-                "https://gallant-shockley-16b477.netlify.app//admin";
+                "https://gallant-shockley-16b477.netlify.app/admin";
               // window.location = "http://localhost:3000/admin";
             } else if (res[0].role == "staff") {
               // window.location = "http://localhost:3000/staff";
               window.location =
-                "https://gallant-shockley-16b477.netlify.app//staff";
+                "https://gallant-shockley-16b477.netlify.app/staff";
             }
           }
         })
