@@ -4,7 +4,7 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import imagepath from "../../Img/img1.png";
 
-function Home() {
+function Home({history}) {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
@@ -19,13 +19,16 @@ function Home() {
           if (res.length == 0) alert("Password and Email doesnt match");
           else {
             if (res[0].role == "admin") {
-              window.location =
-                "https://gallant-shockley-16b477.netlify.app/admin";
+              history.push("/admin");
+              // window.location =
+              //   "https://gallant-shockley-16b477.netlify.app/admin";
               // window.location = "http://localhost:3000/admin";
             } else if (res[0].role == "staff") {
+              history.push("/staff");
+
               // window.location = "http://localhost:3000/staff";
-              window.location =
-                "https://gallant-shockley-16b477.netlify.app/staff";
+              // window.location =
+              //   "https://gallant-shockley-16b477.netlify.app/staff";
             }
           }
         })
